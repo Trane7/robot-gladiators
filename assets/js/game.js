@@ -4,14 +4,14 @@
 
     return value;
   }
-  
-// function to set name
-var getPlayerName = function() {
-  var name = "";
 
-// ***************************************
-// ADD LOOP HERE WITH PROMPT AND CONDITION
-// ***************************************
+// function to set name
+var playerInfo = function() {
+  var name = getPlayerName();
+
+  while (name === "" || name === null) {
+    name = prompt("What is your robot's name?");
+  }
 
   console.log("Your robot's name is " + name);
   return name;
