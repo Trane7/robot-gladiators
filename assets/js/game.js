@@ -4,6 +4,18 @@
 
     return value;
   }
+  
+// function to set name
+var getPlayerName = function() {
+  var name = "";
+
+// ***************************************
+// ADD LOOP HERE WITH PROMPT AND CONDITION
+// ***************************************
+
+  console.log("Your robot's name is " + name);
+  return name;
+};
 
 var playerInfo = {
   name: window.prompt("What is your robot's name?"),
@@ -115,6 +127,7 @@ var startGame = function() {
 
   // fight each enemy robot by looping over them and fighting them one at a time
   for (var i = 0; i < enemyInfo.length; i++) {
+    window.alert('Welcome to Robot Gladiators! Round ' + (i + 1));
     // if player is still alive, keep fighting
     if (playerInfo.health > 0) {
       // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
